@@ -46,8 +46,8 @@ public class ExperienciaController {
 
         experiencia.setTitulo(datosExperiencia.getTitulo());
         experiencia.setInstitucion(datosExperiencia.getInstitucion());
-        experiencia.setAnioInicio(datosExperiencia.getAnioInicio());
-        experiencia.setAnioFin(datosExperiencia.getAnioFin());
+        experiencia.setFechaInicio(datosExperiencia.getFechaInicio());
+        experiencia.setFechaFin(datosExperiencia.getFechaFin());
 
         Experiencia experienciaActualizada = experienciaDao.save(experiencia);
         return ResponseEntity.ok(experienciaActualizada);

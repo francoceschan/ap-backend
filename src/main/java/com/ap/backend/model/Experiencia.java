@@ -1,6 +1,7 @@
 package com.ap.backend.model;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name="experiencias")
@@ -16,22 +17,22 @@ public class Experiencia {
     @Column (name = "puesto", nullable = false)
     private String titulo;
 
-    @Column (name = "anioInicio", nullable = false)
-    private Integer anioInicio;
+    @Column (name = "fechaInicio", nullable = false)
+    private Date fechaInicio;
 
-    @Column (name = "anioFin", nullable = true)
-    private Integer anioFin;
+    @Column (name = "fechaFin", nullable = true)
+    private Date fechaFin;
 
     public Experiencia(){
 
     }
 
-    public Experiencia(Long id, String institucion, String titulo, Integer anioInicio, Integer anioFin) {
+    public Experiencia(Long id, String institucion, String titulo, Date fechaInicio, Date fechaFin) {
         this.id = id;
         this.institucion = institucion;
         this.titulo = titulo;
-        this.anioInicio = anioInicio;
-        this.anioFin = anioFin;
+        this.fechaInicio = fechaInicio;
+        this.fechaFin = fechaFin;
     }
 
     public Long getId() {
@@ -58,19 +59,19 @@ public class Experiencia {
         this.titulo = titulo;
     }
 
-    public Integer getAnioInicio() {
-        return anioInicio;
+    public Date getFechaInicio() {
+        return fechaInicio;
     }
 
-    public void setAnioInicio(Integer anioInicio) {
-        this.anioInicio = anioInicio;
+    public void setFechaInicio(Date fechaInicio) {
+        this.fechaInicio = fechaInicio;
     }
 
-    public Integer getAnioFin() {
-        return anioFin;
+    public Date getFechaFin() {
+        return fechaFin;
     }
 
-    public void setAnioFin(Integer anioFin) {
-        this.anioFin = anioFin;
+    public void setFechaFin(Date fechaFin) {
+        this.fechaFin = fechaFin;
     }
 }

@@ -47,8 +47,8 @@ public class EducacionController {
 
         educacion.setTitulo(datosEducacion.getTitulo());
         educacion.setInstitucion(datosEducacion.getInstitucion());
-        educacion.setAnioInicio(datosEducacion.getAnioInicio());
-        educacion.setAnioFin(datosEducacion.getAnioFin());
+        educacion.setFechaInicio(datosEducacion.getFechaInicio());
+        educacion.setFechaFin(datosEducacion.getFechaFin());
 
         Educacion educacioActualizada = educacionDao.save(educacion);
         return ResponseEntity.ok(educacioActualizada);
