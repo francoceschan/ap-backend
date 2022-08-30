@@ -14,18 +14,7 @@ public class Application {
 
 		SpringApplication.run(Application.class, args);
 
-		/*
-				ESTO SIRVE PARA CREAR UN USUARIO DESDE ACA PORQUE NO VOY A PONER OPCION DE REGISTRARSE (si se quiere usar comentar linea de arriba y descomentar esto)
-		ApplicationContext context = SpringApplication.run(Application.class, args);
 
-		UsuarioDao repository = context.getBean(UsuarioDao.class);
-
-		PasswordEncoder encoder = context.getBean(PasswordEncoder.class);
-
-		Usuario user = new Usuario(null, "Argentina", encoder.encode("Programa"));
-		repository.save(user);
-
-		*/
 
 	}
 
