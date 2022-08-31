@@ -14,7 +14,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/")
-@CrossOrigin(origins = "http://localhost:4200/")
+@CrossOrigin(origins = "https://ap-frontend.web.app/")
 public class ExperienciaController {
 
     @Autowired

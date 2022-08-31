@@ -22,9 +22,9 @@ import org.springframework.web.bind.annotation.*;
  *
  * Si las credenciales son válidas se genera un token JWT como respuesta
  */
-// @CrossOrigin(origins = "http://localhost:8081")
 @RestController
 @RequestMapping("/api/auth")
+@CrossOrigin(origins = "https://ap-frontend.web.app/")
 public class AuthController {
 
     private final AuthenticationManager authManager;

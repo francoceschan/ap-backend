@@ -14,7 +14,7 @@ import java.io.IOException;
 
 @RestController
 @RequestMapping("/api/")
-@CrossOrigin(origins = "http://localhost:4200/")
+@CrossOrigin(origins = "https://ap-frontend.web.app/")
 public class PersonaController {
 
     @Autowired
